@@ -14,7 +14,6 @@
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<img-comparison-slider value="70" bind:this={slider}>
-		<!-- eslint-disable -->
 		<img
 				slot="first"
 				style="width: 100%"
@@ -25,7 +24,6 @@
 				style="width: 100%"
 				src="https://img-comparison-slider.sneas.io/demo/images/after.webp"
 		/>
-		<!-- eslint-enable -->
 	</img-comparison-slider>
 </main>
 
