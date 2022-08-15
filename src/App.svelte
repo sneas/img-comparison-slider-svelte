@@ -3,17 +3,15 @@
 
 	import { onMount } from 'svelte';
 
-	let slider;
-
 	onMount(() => {
-		slider.direction = "vertical";
+		import ('img-comparison-slider');
 	});
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<img-comparison-slider value="70" bind:this={slider}>
+	<img-comparison-slider value="70" direction="vertical">
 		<img
 				slot="first"
 				style="width: 100%"
